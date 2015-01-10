@@ -31,7 +31,7 @@ syn keyword tmuxCmds command-prompt setb set-buffer showb show-buffer lsb
 syn keyword tmuxCmds list-buffers deleteb delete-buffer lscm list-commands
 syn keyword tmuxCmds movew move-window respawnw respawn-window
 syn keyword tmuxCmds source[-file] info server-info clock-mode lock[-server]
-syn keyword tmuxCmds saveb save-buffer killp 
+syn keyword tmuxCmds saveb save-buffer killp wait[-for]
 syn keyword tmuxCmds kill-pane resizep resize-pane selectp select-pane swapp
 syn keyword tmuxCmds swap-pane splitw split-window choose-session
 syn keyword tmuxCmds choose-window loadb load-buffer suspendc
