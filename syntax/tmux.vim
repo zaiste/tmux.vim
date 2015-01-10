@@ -43,8 +43,7 @@ syn keyword tmuxCmds show-environment choose-client displayp display-panes
 syn keyword tmuxCmds run[-shell] lockc lock-client locks lock-session lsp
 syn keyword tmuxCmds list-panes pipep pipe-pane showmsgs show-messages capturep
 syn keyword tmuxCmds capture-pane joinp join-pane choose-buffer
-syn keyword tmuxCmds even-horizontal even-vertical main-horizontal main-vertical
-syn keyword tmuxCmds tiled choose-list lastp last-pane movep move-pane
+syn keyword tmuxCmds choose-list lastp last-pane movep move-pane
 syn keyword tmuxCmds prevl previous-layout prev[-window] respawnp respawn-pane
 
 syn keyword tmuxOptsSet prefix prefix2 status status-fg status-bg bell-action
@@ -89,6 +88,9 @@ syn keyword tmuxOptsSetw pane-base-index other-pane-height other-pane-width
 syn keyword tmuxOptsSetw allow-rename c0-change-interval c0-change-trigger
 syn keyword tmuxOptsSetw layout-history-limit monitor-silence utf8 wrap-search
 
+syn keyword tmuxLayoutName even-horizontal even-vertical 
+syn keyword tmuxLayoutName main-horizontal main-vertical tiled 
+
 syn keyword tmuxTodo FIXME NOTE TODO XXX contained
 
 syn match tmuxKey               /\(C-\|M-\|\^\)\+\S\+/  display
@@ -110,6 +112,7 @@ hi def link tmuxNumber              Number
 hi def link tmuxOptions             Identifier
 hi def link tmuxOptsSet             Function
 hi def link tmuxOptsSetw            Function
+hi def link tmuxLayoutName          Function
 hi def link tmuxString              String
 hi def link tmuxTodo                Todo
 hi def link tmuxVariable            Constant
