@@ -1,0 +1,134 @@
+Last syntax Revision                                      | Tmux 1.9a                    | opt-type | chg
+----------------------------------------------------------------------------------------------------------------
+aggressive-resize                                         | aggressive-resize            |     w    |
+allow-rename                                              | allow-rename                 |     w    |
+alternate-screen                                          | alternate-screen             |     w    |
+                                                          | assume-paste-time            |     g    | New
+automatic-rename                                          | automatic-rename             |     w    |
+                                                          | automatic-rename-format      |     w    | New
+base-index                                                | base-index                   |     g    |
+bell-action                                               | bell-action                  |     g    |
+bell-on-alert                                             | bell-on-alert                |     g    |
+buffer-limit                                              | buffer-limit                 |     s    |
+c0-change-interval                                        | c0-change-interval           |     w    |
+c0-change-trigger                                         | c0-change-trigger            |     w    |
+clock-mode-colour                                         | clock-mode-colour            |     w    |
+clock-mode-style                                          | clock-mode-style             |     w    |
+default-command                                           | default-command              |     g    |
+default-path                                              |                              |     -    | REMOVED !!
+default-shell                                             | default-shell                |     g    |
+default-terminal                                          | default-terminal             |     g    |
+destroy-unattached                                        | destroy-unattached           |     g    |
+detach-on-destroy                                         | detach-on-destroy            |     g    |
+display-panes-active-colour                               | display-panes-active-colour  |     g    |
+display-panes-colour                                      | display-panes-colour         |     g    |
+display-panes-time                                        | display-panes-time           |     g    |
+display-time                                              | display-time                 |     g    |
+escape-time                                               | escape-time                  |     s    |
+exit-unattached                                           | exit-unattached              |     s    |
+                                                          | focus-events                 |     s    | New
+force-height                                              | force-height                 |     w    |
+force-width                                               | force-width                  |     w    |
+history-limit                                             | history-limit                |     g    |
+lock-after-time                                           | lock-after-time              |     g    |
+lock-command                                              | lock-command                 |     g    |
+lock-server                                               | lock-server                  |     g    |
+main-pane-height                                          | main-pane-height             |     w    |
+main-pane-width                                           | main-pane-width              |     w    |
+message-[command-]attr                                    | message-[command-]attr       |     g    | Deprecated
+message-[command-]bg                                      | message-[command-]bg         |     g    | Deprecated
+message-[command-]fg                                      | message-[command-]fg         |     g    | Deprecated
+                                                          | message-[command-]style      |     g    | New
+message-limit                                             | message-limit                |     g    |
+mode-attr                                                 | mode-attr                    |     w    | Deprecated
+mode-bg                                                   | mode-bg                      |     w    | Deprecated
+mode-fg                                                   | mode-fg                      |     w    | Deprecated
+mode-keys                                                 | mode-keys                    |     w    |
+mode-mouse                                                | mode-mouse                   |     w    |
+                                                          | mode-style                   |     w    | New
+monitor-activity                                          | monitor-activity             |     w    |
+monitor-content                                           | monitor-content              |     w    |
+                                                          | monitor-silence              |     w    | New
+mouse-resize-pane                                         | mouse-resize-pane            |     g    |
+mouse-select-pane                                         | mouse-select-pane            |     g    |
+mouse-select-window                                       | mouse-select-window          |     g    |
+mouse-utf8                                                | mouse-utf8                   |     g    |
+other-pane-height                                         | other-pane-height            |     w    |
+other-pane-width                                          | other-pane-width             |     w    |
+pane-active-border-bg                                     | pane-active-border-bg        |     g    | Deprecated
+pane-active-border-fg                                     | pane-active-border-fg        |     g    | Deprecated
+                                                          | pane-active-border-style     |     g    | New
+pane-base-index                                           | pane-base-index              |     w    |
+pane-border-bg                                            | pane-border-bg               |     g    | Deprecated
+pane-border-fg                                            | pane-border-fg               |     g    | Deprecated
+                                                          | pane-border-style            |     g    | New
+prefix                                                    | prefix                       |     g    |
+prefix2                                                   | prefix2                      |     g    |
+quiet                                                     | quiet                        |     s    |
+remain-on-exit                                            | remain-on-exit               |     w    |
+renumber-windows                                          | renumber-windows             |     g    |
+repeat-time                                               | repeat-time                  |     g    |
+set-clipboard                                             | set-clipboard                |     s    |
+set-remain-on-exit                                        | set-remain-on-exit           |     g    |
+set-titles                                                | set-titles                   |     g    |
+set-titles-string                                         | set-titles-string            |     g    |
+status                                                    | status                       |     g    |
+status-attr                                               | status-attr                  |     g    | Deprecated
+status-bg                                                 | status-bg                    |     g    | Deprecated
+status-fg                                                 | status-fg                    |     g    | Deprecated
+status-interval                                           | status-interval              |     g    |
+status-justify                                            | status-justify               |     g    |
+status-keys                                               | status-keys                  |     g    |
+status-left                                               | status-left                  |     g    |
+status-left-attr                                          | status-left-attr             |     g    | Deprecated
+status-left-bg                                            | status-left-bg               |     g    | Deprecated
+status-left-fg                                            | status-left-fg               |     g    | Deprecated
+status-left-length                                        | status-left-length           |     g    |
+                                                          | status-left-style            |     g    | New
+status-position                                           | status-position              |     g    |
+status-right                                              | status-right                 |     g    |
+status-right-attr                                         | status-right-attr            |     g    | Deprecated
+status-right-bg                                           | status-right-bg              |     g    | Deprecated
+status-right-fg                                           | status-right-fg              |     g    | Deprecated
+status-right-length                                       | status-right-length          |     g    |
+                                                          | status-right-style           |     g    | New
+                                                          | status-style                 |     g    | New
+status-utf8                                               | status-utf8                  |     g    |
+synchronize-panes                                         | synchronize-panes            |     w    |
+terminal-overrides                                        | terminal-overrides           |     g    |
+uft8                                                      | utf8                         |     w    |
+update-environment                                        | update-environment           |     g    |
+visual-activity                                           | visual-activity              |     g    |
+visual-bell                                               | visual-bell                  |     g    |
+visual-content                                            | visual-content               |     g    |
+visual-silence                                            | visual-silence               |     g    |
+window-status-activity-attr                               | window-status-activity-attr  |     w    | Deprecated
+window-status-activity-bg                                 | window-status-activity-bg    |     w    | Deprecated
+window-status-activity-fg                                 | window-status-activity-fg    |     w    | Deprecated
+                                                          | window-status-activity-style |     w    | New
+window-status-attr                                        | window-status-attr           |     w    | Deprecated
+window-status-bell-attr                                   | window-status-bell-attr      |     w    | Deprecated
+window-status-bell-bg                                     | window-status-bell-bg        |     w    | Deprecated
+window-status-bell-fg                                     | window-status-bell-fg        |     w    | Deprecated
+                                                          | window-status-bell-style     |     w    | New
+window-status-bg                                          | window-status-bg             |     w    | Deprecated
+window-status-content-attr                                | window-status-content-attr   |     w    | Deprecated
+window-status-content-bg                                  | window-status-content-bg     |     w    | Deprecated
+window-status-content-fg                                  | window-status-content-fg     |     w    | Deprecated
+                                                          | window-status-content-style  |     w    | New
+window-status-current-attr                                | window-status-current-attr   |     w    | Deprecated
+window-status-current-bg                                  | window-status-current-bg     |     w    | Deprecated
+window-status-current-fg                                  | window-status-current-fg     |     w    | Deprecated
+window-status-current-format                              | window-status-current-format |     w    |
+                                                          | window-status-current-style  |     w    | New
+window-status-fg                                          | window-status-fg             |     w    | Deprecated
+window-status-format                                      | window-status-format         |     w    | Deprecated
+                                                          | window-status-last-attr      |     w    | Deprecated
+                                                          | window-status-last-bg        |     w    | Deprecated
+                                                          | window-status-last-fg        |     w    | Deprecated
+                                                          | window-status-last-style     |     w    | New
+                                                          | window-status-separator      |     w    | New
+                                                          | window-status-style          |     w    | New
+word-separators                                           | word-separators              |     g    |
+                                                          | wrap-search                  |     w    | New
+xterm-keys                                                | xterm-keys                   |     w    |

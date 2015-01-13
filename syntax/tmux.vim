@@ -31,10 +31,10 @@ syn keyword tmuxCmds command-prompt setb set-buffer showb show-buffer lsb
 syn keyword tmuxCmds list-buffers deleteb delete-buffer lscm list-commands
 syn keyword tmuxCmds movew move-window respawnw respawn-window
 syn keyword tmuxCmds source[-file] info server-info clock-mode lock[-server]
-syn keyword tmuxCmds saveb save-buffer killp
+syn keyword tmuxCmds saveb save-buffer killp wait[-for]
 syn keyword tmuxCmds kill-pane resizep resize-pane selectp select-pane swapp
 syn keyword tmuxCmds swap-pane splitw split-window choose-session
-syn keyword tmuxCmds choose-window loadb load-buffer copyb copy-buffer suspendc
+syn keyword tmuxCmds choose-window loadb load-buffer suspendc
 syn keyword tmuxCmds suspend-client findw find-window breakp break-pane nextl
 syn keyword tmuxCmds next-layout rotatew rotate-window confirm[-before]
 syn keyword tmuxCmds clearhist clear-history selectl select-layout if[-shell]
@@ -43,15 +43,14 @@ syn keyword tmuxCmds show-environment choose-client displayp display-panes
 syn keyword tmuxCmds run[-shell] lockc lock-client locks lock-session lsp
 syn keyword tmuxCmds list-panes pipep pipe-pane showmsgs show-messages capturep
 syn keyword tmuxCmds capture-pane joinp join-pane choose-buffer
-syn keyword tmuxCmds even-horizontal even-vertical main-horizontal main-vertical
-syn keyword tmuxCmds tiled choose-list lastp last-pane movep move-pane
+syn keyword tmuxCmds choose-list lastp last-pane movep move-pane
 syn keyword tmuxCmds prevl previous-layout prev[-window] respawnp respawn-pane
 
 syn keyword tmuxOptsSet prefix prefix2 status status-fg status-bg bell-action
 syn keyword tmuxOptsSet default-command history-limit status-left status-right
 syn keyword tmuxOptsSet status-interval set-titles display-time buffer-limit
 syn keyword tmuxOptsSet status-left-length status-right-length status-position
-syn keyword tmuxOptsSet message-[command-]bg lock-after-time default-path
+syn keyword tmuxOptsSet message-[command-]bg lock-after-time assume-paste-time 
 syn keyword tmuxOptsSet message-[command-]attr status-attr set-remain-on-exit
 syn keyword tmuxOptsSet status-utf8 default-terminal visual-activity repeat-time
 syn keyword tmuxOptsSet visual-bell visual-content status-justify status-keys
@@ -59,16 +58,17 @@ syn keyword tmuxOptsSet terminal-overrides status-left-attr status-left-bg
 syn keyword tmuxOptsSet status-left-fg status-right-attr status-right-bg
 syn keyword tmuxOptsSet status-right-fg update-environment base-index
 syn keyword tmuxOptsSet display-panes-colour display-panes-time default-shell
-syn keyword tmuxOptsSet set-titles-string lock-command lock-server
+syn keyword tmuxOptsSet set-titles-string lock-command lock-server status-style 
 syn keyword tmuxOptsSet mouse-select-pane message-limit quiet escape-time
 syn keyword tmuxOptsSet pane-active-border-bg pane-active-border-fg
 syn keyword tmuxOptsSet pane-border-bg pane-border-fg message-[command-]fg
 syn keyword tmuxOptsSet display-panes-active-colour alternate-screen
-syn keyword tmuxOptsSet detach-on-destroy word-separators
+syn keyword tmuxOptsSet detach-on-destroy word-separators message-[command-]style 
 syn keyword tmuxOptsSet destroy-unattached exit-unattached set-clipboard
 syn keyword tmuxOptsSet bell-on-alert mouse-select-window mouse-utf8
-syn keyword tmuxOptsSet mouse-resize-pane
+syn keyword tmuxOptsSet mouse-resize-pane pane-active-border-style 
 syn keyword tmuxOptsSet message-[command-]fg renumber-windows visual-silence
+syn keyword tmuxOptsSet pane-border-style status-left-style status-right-style focus-events 
 
 syn keyword tmuxOptsSetw monitor-activity aggressive-resize force-width
 syn keyword tmuxOptsSetw force-height remain-on-exit uft8 mode-fg mode-bg
@@ -79,15 +79,21 @@ syn keyword tmuxOptsSetw main-pane-width main-pane-height monitor-content
 syn keyword tmuxOptsSetw window-status-current-attr window-status-current-bg
 syn keyword tmuxOptsSetw window-status-current-fg mode-mouse synchronize-panes
 syn keyword tmuxOptsSetw window-status-format window-status-current-format
-syn keyword tmuxOptsSetw window-status-activity-attr
+syn keyword tmuxOptsSetw window-status-activity-attr mode-style wrap-search 
 syn keyword tmuxOptsSetw window-status-activity-bg window-status-activity-fg
-syn keyword tmuxOptsSetw window-status-bell-attr
+syn keyword tmuxOptsSetw window-status-bell-attr window-status-activity-style
 syn keyword tmuxOptsSetw window-status-bell-bg window-status-bell-fg
-syn keyword tmuxOptsSetw window-status-content-attr
+syn keyword tmuxOptsSetw window-status-content-attr window-status-content-style 
 syn keyword tmuxOptsSetw window-status-content-bg window-status-content-fg
 syn keyword tmuxOptsSetw pane-base-index other-pane-height other-pane-width
 syn keyword tmuxOptsSetw allow-rename c0-change-interval c0-change-trigger
 syn keyword tmuxOptsSetw layout-history-limit monitor-silence utf8 wrap-search
+syn keyword tmuxOptsSetw automatic-rename-format monitor-silence window-status-bell-style
+syn keyword tmuxOptsSetw window-status-last-style window-status-separator
+syn keyword tmuxOptsSetw window-status-current-style window-status-style 
+
+syn keyword tmuxLayoutName even-horizontal even-vertical 
+syn keyword tmuxLayoutName main-horizontal main-vertical tiled 
 
 syn keyword tmuxTodo FIXME NOTE TODO XXX contained
 
@@ -110,6 +116,7 @@ hi def link tmuxNumber              Number
 hi def link tmuxOptions             Identifier
 hi def link tmuxOptsSet             Function
 hi def link tmuxOptsSetw            Function
+hi def link tmuxLayoutName          Function
 hi def link tmuxString              String
 hi def link tmuxTodo                Todo
 hi def link tmuxVariable            Constant
