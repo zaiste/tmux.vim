@@ -50,8 +50,8 @@ syn keyword tmuxOptsSet prefix prefix2 status status-fg status-bg bell-action
 syn keyword tmuxOptsSet default-command history-limit status-left status-right
 syn keyword tmuxOptsSet status-interval set-titles display-time buffer-limit
 syn keyword tmuxOptsSet status-left-length status-right-length status-position
-syn keyword tmuxOptsSet message-[command-]bg lock-after-time assume-paste-time 
-syn keyword tmuxOptsSet message-[command-]attr status-attr set-remain-on-exit
+syn keyword tmuxOptsSet message-command-bg lock-after-time assume-paste-time 
+syn keyword tmuxOptsSet message-command-attr status-attr set-remain-on-exit
 syn keyword tmuxOptsSet status-utf8 default-terminal visual-activity repeat-time
 syn keyword tmuxOptsSet visual-bell visual-content status-justify status-keys
 syn keyword tmuxOptsSet terminal-overrides status-left-attr status-left-bg
@@ -61,14 +61,15 @@ syn keyword tmuxOptsSet display-panes-colour display-panes-time default-shell
 syn keyword tmuxOptsSet set-titles-string lock-command lock-server status-style 
 syn keyword tmuxOptsSet mouse-select-pane message-limit quiet escape-time
 syn keyword tmuxOptsSet pane-active-border-bg pane-active-border-fg
-syn keyword tmuxOptsSet pane-border-bg pane-border-fg message-[command-]fg
+syn keyword tmuxOptsSet pane-border-bg pane-border-fg message-command-fg
 syn keyword tmuxOptsSet display-panes-active-colour alternate-screen
-syn keyword tmuxOptsSet detach-on-destroy word-separators message-[command-]style 
+syn keyword tmuxOptsSet detach-on-destroy word-separators message-style 
 syn keyword tmuxOptsSet destroy-unattached exit-unattached set-clipboard
 syn keyword tmuxOptsSet bell-on-alert mouse-select-window mouse-utf8
 syn keyword tmuxOptsSet mouse-resize-pane pane-active-border-style 
-syn keyword tmuxOptsSet message-[command-]fg renumber-windows visual-silence
-syn keyword tmuxOptsSet pane-border-style status-left-style status-right-style focus-events 
+syn keyword tmuxOptsSet message-fg renumber-windows visual-silence focus-events
+syn keyword tmuxOptsSet pane-border-style status-left-style status-right-style 
+syn keyword tmuxOptsSet message-command-style message-bg message-attr
 
 syn keyword tmuxOptsSetw monitor-activity aggressive-resize force-width
 syn keyword tmuxOptsSetw force-height remain-on-exit uft8 mode-fg mode-bg
